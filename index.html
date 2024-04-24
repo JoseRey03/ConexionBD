@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexion BD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="conexion.php" method="post">
+    <div class="container">
+        <fieldset>
+            <h1>Formulario de Registro</h1>
+            <p><label for="nombre">Nombre: </label><input name="nombre" type="text" id="nombre" pattern="[A-Za-z]{3,12}" required></p>
+            <p><label for="apellido">Apellido: </label><input name="apellido" type="text" id="apellido" pattern="[A-Za-z]{4,20}" required></p>
+            <p><label for="email">Email: </label> <input name="email" type="email" id="email" required></p>
+            <p>Fecha de nacimiento: <input name="nacimiento" type="date" min="1920" max="2006" required></p>
+            <p><label for="password">Contraseña: </label> <input name="password" required type="password" id="password" minlength="8" maxlength="12" pattern="^(?=.*[0-9]).[A-Za-z].[!@#$%^&*()_+{}\[\]:;,>.?/~]" required></p>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </div>
+</form>
+</body>
+</html>
